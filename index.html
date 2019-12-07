@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Alata&display=swap" rel="stylesheet">
+    <title>What's the weather like?</title>
+
+</head>
+
+<body>
+    <div class='wrapper'>
+        <header>
+            <form>
+                <input type="text" placeholder="Enter a city" autocomplete="off" /><i class="fa fa-search"></i>
+            </form>
+        </header>
+
+        <section class="today">
+            <h1 class="city"></h1>
+            <h4>Today, <span class="todayTime"></span></h4>
+            <img src="" class="today-icon">
+            <div class="temperature">
+                <div>Temperature: <span class="day1"></span> &degC</div>
+                <div>Pressure: <span class="pressure"></span> hpa</div>
+                <div>Humidity: <span class="humidity"></span> %</div>
+                <div>Wind: <span class="wind"></span> m/s</div>
+            </div>
+        </section>
+
+
+        <section class="next-days">
+
+            <div class="container">
+                <div class="row">
+                    <div class="day col-sm-12 col-md-6 col-lg-3 box">
+
+                        <h4>Tomorrow, <span class="dateTomorrow"></span></h4>
+                        <img src="" class="icon">
+                        <div class="temperature-02">
+                            <div class="font">Temperature: <span class="day2"></span>&degC</div>
+                        </div>
+                    </div>
+
+                    <div class="day col-sm-12 col-md-6 col-lg-3">
+
+                        <h4><span class="weatherDay3">...</span>, <span class="dateDay3"></span></h4>
+                        <img src="" class="icon">
+                        <div class="font">Temperature: <span class="day3"></span>&degC</div>
+                    </div>
+
+                    <div class="day col-sm-12 col-md-6 col-lg-3">
+                        <h4><span class="weatherDay4">...</span>, <span class="dateDay4"></span></h4>
+                        <img src="" class="icon">
+                        <div class="font">Temperature: <span class="day4"></span>&degC</div>
+
+                    </div>
+
+                    <div class="day col-sm-12 col-md-6 col-lg-3">
+                        <h4><span class="weatherDay5">...</span>, <span class="dateDay5"></span></h4>
+                        <img src="" class="icon">
+                        <div class="font">Temperature: <span class="day5"></span>&degC</div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <script src="code.js"></script>
+    </div>
+</body>
+
+</html>
